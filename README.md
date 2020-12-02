@@ -1,5 +1,5 @@
 # mongodb-backup
-A very simple script to do mongodb backup with rotation
+A very very simple script to do mongodb backup with rotation
 
 # requirements
 - pigz, tar and git packages
@@ -16,9 +16,11 @@ yum install pigz tar git
 ```
 
 # first setup
+```bash
 cd /opt/
 git clone https://github.com/franciscopaniskaseker/mongodb-backup.git
 sudo /opt/mongodb-backup/mongo_backup.sh 7 2
+```
 
 # script parameters
 /opt/mongodb-backup/mongo_backup.sh NumberOfDaysOfRetention NumberOfPigzThreads
