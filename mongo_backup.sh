@@ -11,7 +11,13 @@ then
   cat <<EOF> /etc/cron.d/mongodb-backup
 SHELL=/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+# everyday 4AM
 0 4 * * * /opt/mongodb-backup/mongo_backup.sh $NumberOfDaysOfRetention $NumberOfPigzThreads
+
+# everyday two times a day examples:
+# 0 */12 * * *
+# 0 12,4 * * * 
+# read more: https://crontab.guru/
 EOF
 fi
 }
