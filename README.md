@@ -33,6 +33,15 @@ Example:
 # to customize the crontab file
 Edit the file /etc/cron.d/mongodb-backup
 
+# to customize the backup directory
+Edit the mongo_backup.sh script or create a symbolic link pointing /backup to anywhere.
+
+# to update this script
+Just do git pull under /opt/mongodb-backup
+
+Important:
+- If you customized the backup directory, make sure that will continue working with git pull
+
 # backup file name explained
 mongodb.dump.LINUXTIMESTAMP.tar.gz
 Example:
@@ -50,3 +59,5 @@ Wed Dec  2 03:02:55 UTC 2020
 - [x] Dump archive (tar)
 - [x] Dump compression (pigz)
 - [ ] Create logs under /var/log/
+- [ ] Create a SFTP solution
+- [ ] Create a S3 object capable solution
