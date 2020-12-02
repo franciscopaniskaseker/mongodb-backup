@@ -60,4 +60,4 @@ Wed Dec  2 03:02:55 UTC 2020
 - [x] Dump compression (pigz)
 - [ ] Create logs under /var/log/
 - [ ] Create a SFTP solution
-- [ ] Create a S3 object capable solution
+- [ ] Create a S3 object store capable solution
